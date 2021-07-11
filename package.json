@@ -1,0 +1,28 @@
+{
+  "name": "exemplocleanarch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "main": "tsc && node ./dist/main.js",
+    "test": "tsc && jest ./dist",
+    "express": "tsc && node ./dist/src/infra/http/express.js",
+    "hapi": "tsc && node ./dist/src/infra/http/hapi.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.1.5",
+    "@types/jest": "^26.0.24",
+    "express": "^4.17.1",
+    "jest": "^27.0.6",
+    "mongodb": "^3.6.10",
+    "mongoose": "^5.13.2",
+    "mysql": "^2.18.1",
+    "pg-promise": "^10.10.2"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "@types/mysql": "^2.15.19"
+  }
+}
